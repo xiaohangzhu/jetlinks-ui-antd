@@ -62,7 +62,9 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
         onSearch={() => { }}
         onPressEnter={() => { }}
       /> */}
-      <Tooltip title="使用文档">
+    
+    {/* changed zxh */}
+      {/* <Tooltip title="使用文档">
         <a
           target="_blank"
           href="http://doc.jetlinks.cn/"
@@ -71,7 +73,17 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
         >
           <Icon type="question-circle-o" />
         </a>
+      </Tooltip> */}
+        <Tooltip title="">
+        <div
+          className={styles.action}
+        >
+          <Icon type="" />
+        </div>
       </Tooltip>
+      {/* changed zxh end */}
+
+
       <span onClick={() => { fetchData() }}>
         <NoticeIconView />
       </span>
